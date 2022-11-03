@@ -1,0 +1,113 @@
+@import url(./global.css);
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.41);
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.41);
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.input-area > label {
+  border: 1px dashed rgba(240, 240, 240, 0.247);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  border-radius: 20px;
+  color: rgb(109, 109, 109);
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+
+.input-area > label > img {
+  width: 40%;
+}
+
+.input-area > label:hover {
+  border: 1px dashed rgba(180, 180, 180, 0.911);
+}
+
+.button-area > input {
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 2%;
+  background-color: #488bff;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+
+.button-area > input:hover {
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  background-color: #196bfa;
+}
+
+.input-area > label > p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.errorMessage{
+  color: #fd5c3f;
+}
+
+.sucessMessage{
+  color: #41ec9d;
+}
+
+@media only screen and (max-width: 769px) {
+  form {
+    padding: 30px;
+  }
+  .input-area > label > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button-area > input {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 80%;
+    padding: 5%;
+    background-color: #488bff;
+  }
+}
